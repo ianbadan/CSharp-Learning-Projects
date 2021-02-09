@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace SistemaBanco
 {
@@ -22,7 +23,7 @@ namespace SistemaBanco
             if (hasDeposito == 'S' || hasDeposito == 's')
             {
                 Console.Write("Entre o valor do depósito inicial: ");
-                valor = decimal.Parse(Console.ReadLine());
+                valor = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                 c1 = new ContaBancaria(codigo, nome, valor);
             }
             else
