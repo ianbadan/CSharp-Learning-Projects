@@ -1,0 +1,13 @@
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.csprojAssemblyReference.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.AssemblyInfoInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.AssemblyInfo.cs
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.csproj.CoreCompileInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.exe
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.deps.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.runtimeconfig.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.runtimeconfig.dev.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\bin\Debug\netcoreapp3.1\SistemaBanco.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\SistemaBanco\SistemaBanco\obj\Debug\netcoreapp3.1\SistemaBanco.genruntimeconfig.cache
