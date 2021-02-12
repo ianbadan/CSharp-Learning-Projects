@@ -2,13 +2,13 @@
 
 Projeto simples para exemplificar a utilização de enumeração (ENUM) e listas dentro do C#. Além de mostrar como funciona a parte de composição dentro da linguagem para fazer um projeto mais organizado.
 
-##Descrição 
+## Descrição 
 
 Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depois, solicitardo usuário um mês e mostrar qual foi o salário do funcionário nesse mês, conforme exemplo.
 
 ![](img/UMLrepresentation.png)
 
-###Exemplo
+### Exemplo
 
 Enter department's name: **Design**
 Enter worker data:
