@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\OrderSystem\\OrderSystem\\OrderSystem.csproj": {}
+    "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\WorkerProject\\WorkerProject\\WorkerProject.csproj": {}
   },
   "projects": {
-    "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\OrderSystem\\OrderSystem\\OrderSystem.csproj": {
+    "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\WorkerProject\\WorkerProject\\WorkerProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\OrderSystem\\OrderSystem\\OrderSystem.csproj",
-        "projectName": "OrderSystem",
-        "projectPath": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\OrderSystem\\OrderSystem\\OrderSystem.csproj",
+        "projectUniqueName": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\WorkerProject\\WorkerProject\\WorkerProject.csproj",
+        "projectName": "WorkerProject",
+        "projectPath": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\WorkerProject\\WorkerProject\\WorkerProject.csproj",
         "packagesPath": "C:\\Users\\ianba\\.nuget\\packages\\",
-        "outputPath": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\OrderSystem\\OrderSystem\\obj\\",
+        "outputPath": "B:\\OneDrive\\Programação\\C# (C-Sharp)\\CSharp-Learning-Projects\\WorkerProject\\WorkerProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ianba\\AppData\\Roaming\\NuGet\\NuGet.Config",
