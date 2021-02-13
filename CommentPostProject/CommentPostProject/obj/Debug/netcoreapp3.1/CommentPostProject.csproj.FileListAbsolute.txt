@@ -1,0 +1,13 @@
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.exe
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.deps.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.runtimeconfig.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.runtimeconfig.dev.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\bin\Debug\netcoreapp3.1\CommentPostProject.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.csprojAssemblyReference.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.AssemblyInfoInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.AssemblyInfo.cs
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.csproj.CoreCompileInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\CommentPostProject\CommentPostProject\obj\Debug\netcoreapp3.1\CommentPostProject.genruntimeconfig.cache
