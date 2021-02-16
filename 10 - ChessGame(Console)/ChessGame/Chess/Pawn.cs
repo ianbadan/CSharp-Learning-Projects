@@ -1,6 +1,6 @@
 ﻿using ChessBoard;
 
-namespace ChessPieces
+namespace Chess
 {
     class Pawn : Piece
     {

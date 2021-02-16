@@ -1,10 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace ChessGame.ChessBoard
+
+namespace ChessBoard
 {
-    class ChessBoardException
+    class ChessBoardException : Exception
     {
+        public ChessBoardException(string message) : base(message)
+        {
+
+        }
     }
 }

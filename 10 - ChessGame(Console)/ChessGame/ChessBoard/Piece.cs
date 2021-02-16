@@ -18,5 +18,10 @@ namespace ChessBoard
             Color = color;
             MovimentsQuantity = 0;
         }
+
+        public void IncrementMovimentsQuantity()
+        {
+            MovimentsQuantity++;
+        }
     }
 }

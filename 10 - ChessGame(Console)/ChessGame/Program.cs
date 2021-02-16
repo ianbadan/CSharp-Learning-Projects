@@ -1,6 +1,6 @@
 ﻿using System;
 using ChessBoard;
-using ChessPieces;
+using Chess;
 
 namespace ChessGame
 {
@@ -8,14 +8,26 @@ namespace ChessGame
     {
         static void Main(string[] args)
         {
-            Board board = new Board(8, 8);
+            try
+            {
+                ChessMatch chessMatch = new ChessMatch();
 
-            board.InsertPiece(new Tower(board, Color.Black), new Position(0, 0));
-            board.InsertPiece(new Tower(board, Color.Black), new Position(1, 3));
-            board.InsertPiece(new King(board, Color.Black), new Position(2, 4));
-            board.InsertPiece(new Tower(board, Color.Black), new Position(3, 5));
-
-            Screen.PrintBoard(board);
+                while (!chessMatch.isEnded)
+                {
+                    Console.Clear();
+                    Screen.PrintBoard(chessMatch.Board);
+                    Console.Write("Origin: ");
+                    Position origin = Screen.ReadChessPosition().ToPosition();
+                    Console.Write("Destionation: ");
+                    Position destination = Screen.ReadChessPosition().ToPosition();
+                    chessMatch.ExecuteMoviment(origin, destination);
+                }
+               
+            }
+            catch (ChessBoardException e)
+            {
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
