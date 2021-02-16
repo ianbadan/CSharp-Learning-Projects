@@ -1,0 +1,13 @@
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.exe
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.deps.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.runtimeconfig.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.runtimeconfig.dev.json
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\bin\Debug\netcoreapp3.1\EmployeeSystem.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.csprojAssemblyReference.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.AssemblyInfoInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.AssemblyInfo.cs
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.csproj.CoreCompileInputs.cache
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.dll
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.pdb
+B:\OneDrive\Programação\C# (C-Sharp)\CSharp-Learning-Projects\EmployeeSystem\EmployeeSystem\obj\Debug\netcoreapp3.1\EmployeeSystem.genruntimeconfig.cache
