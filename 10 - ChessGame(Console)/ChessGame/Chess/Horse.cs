@@ -9,14 +9,43 @@ namespace Chess
 
         }
 
-        public override bool[,] PossibleMoviments()
-        {
-            throw new System.NotImplementedException();
-        }
 
         public override string ToString()
         {
             return "H";
+        }
+
+        public override bool[,] PossibleMoviments()
+        {
+            bool[,] mat = new bool[Board.Lines, Board.Columns];
+
+            Position pos = new Position(0, 0);
+
+            pos.SetValue(Position.Line - 1, Position.Column - 2);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line - 2, Position.Column - 1);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line - 2, Position.Column + 1);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line - 1, Position.Column + 2);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line + 1, Position.Column + 2);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line + 2, Position.Column + 1);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line + 2, Position.Column - 1);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            pos.SetValue(Position.Line + 1, Position.Column - 2);
+            if (Board.IsPositionValid(pos) && IsAbleToMove(pos)) mat[pos.Line, pos.Column] = true;
+
+            return mat;
         }
     }
 }

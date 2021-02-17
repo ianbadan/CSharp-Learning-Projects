@@ -19,7 +19,7 @@ namespace ChessBoard
             MovimentsQuantity = 0;
         }
 
-        public bool CanMove(Position position)
+        protected bool IsAbleToMove(Position position)
         {
             Piece p = Board.GetPiece(position);
             return p == null || p.Color != Color;

@@ -16,7 +16,7 @@ namespace Chess
             Position pos = new Position(0,0);
 
             pos.SetValue(Position.Line - 1, Position.Column);
-            while( Board.IsPositionValid(pos) && CanMove(pos))
+            while( Board.IsPositionValid(pos) && IsAbleToMove(pos))
             {
                 mat[pos.Line, pos.Column] = true;
                 if (Board.GetPiece(pos) != null && Board.GetPiece(pos).Color != Color) break;
@@ -26,7 +26,7 @@ namespace Chess
 
             //DOWN
             pos.SetValue(Position.Line + 1, Position.Column);
-            while (Board.IsPositionValid(pos) && CanMove(pos))
+            while (Board.IsPositionValid(pos) && IsAbleToMove(pos))
             { 
                 mat[pos.Line, pos.Column] = true;
                 if (Board.GetPiece(pos) != null && Board.GetPiece(pos).Color != Color) break;
@@ -35,7 +35,7 @@ namespace Chess
 
             //LEFT
             pos.SetValue(Position.Line, Position.Column - 1);
-            while (Board.IsPositionValid(pos) && CanMove(pos))
+            while (Board.IsPositionValid(pos) && IsAbleToMove(pos))
             {
                 mat[pos.Line, pos.Column] = true;
                 if (Board.GetPiece(pos) != null && Board.GetPiece(pos).Color != Color) break;
@@ -44,7 +44,7 @@ namespace Chess
 
             //RIGHT
             pos.SetValue(Position.Line, Position.Column + 1);
-            while (Board.IsPositionValid(pos) && CanMove(pos))
+            while (Board.IsPositionValid(pos) && IsAbleToMove(pos))
             {
 
                 mat[pos.Line, pos.Column] = true;

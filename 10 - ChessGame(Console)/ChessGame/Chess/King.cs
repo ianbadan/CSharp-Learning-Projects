@@ -22,7 +22,7 @@ namespace Chess
                     {
                         continue;
                     }
-                    else if (Board.IsPositionValid(pos) && CanMove(pos))
+                    else if (Board.IsPositionValid(pos) && IsAbleToMove(pos))
                     {
                         mat[i, j] = true;
                     }
