@@ -9,6 +9,11 @@ namespace Chess
 
         }
 
+        public override bool[,] PossibleMoviments()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public override string ToString()
         {
             return "P";
