@@ -9,7 +9,7 @@ namespace Chess
         public Board Board { get; private set; }
         public int Turn { get; private set; }
         public Color CurrentPlayer { get; private set; }
-        public bool IsEnded { get; private set; }
+        public bool IsMatchEnded { get; private set; }
         public bool InCheck { get; set; }
         public HashSet<Piece> Pieces { get; private set; }
         public HashSet<Piece> CapturedPieces { get; private set; }
@@ -20,7 +20,7 @@ namespace Chess
             Board = new Board(8, 8);
             Turn = 1;
             CurrentPlayer = Color.White;
-            IsEnded = false;
+            IsMatchEnded = false;
             InCheck = false;
             Pieces = new HashSet<Piece>();
             CapturedPieces = new HashSet<Piece>();
@@ -33,7 +33,7 @@ namespace Chess
             piece.IncrementMovimentsQuantity();
             Piece captured = Board.RemovePiece(destination);
             Board.InsertPiece(piece, destination);
-            if(captured != null)
+            if (captured != null)
             {
                 CapturedPieces.Add(captured);
             }
@@ -44,7 +44,7 @@ namespace Chess
         {
             Piece p = Board.RemovePiece(destination);
             p.DecrementMovimentsQuantity();
-            if(captured != null)
+            if (captured != null)
             {
                 Board.InsertPiece(captured, destination);
                 CapturedPieces.Remove(captured);
@@ -64,13 +64,22 @@ namespace Chess
             if (IsKingInCheck(Adversary(CurrentPlayer)))
             {
                 InCheck = true;
+                if (IsCheckMate(Adversary(CurrentPlayer)))
+                {
+                    IsMatchEnded = true;
+                    return;
+                }
+
             }
             else
             {
                 InCheck = false;
             }
+
             Turn++;
             ChangeCurrentPlayer();
+
+
         }
 
         public void ChangeCurrentPlayer()
@@ -112,9 +121,9 @@ namespace Chess
         public HashSet<Piece> GetCapturedPieces(Color color)
         {
             HashSet<Piece> aux = new HashSet<Piece>();
-            foreach(Piece p in CapturedPieces)
+            foreach (Piece p in CapturedPieces)
             {
-                if(p.Color == color)
+                if (p.Color == color)
                 {
                     aux.Add(p);
                 }
@@ -122,7 +131,7 @@ namespace Chess
             return aux;
         }
 
-        public HashSet<Piece> GetPiecesInGame(Color color)
+        public HashSet<Piece> GetInGamePieces(Color color)
         {
             HashSet<Piece> aux = new HashSet<Piece>();
             foreach (Piece p in Pieces)
@@ -138,7 +147,7 @@ namespace Chess
 
         private Color Adversary(Color color)
         {
-            if(color == Color.White)
+            if (color == Color.White)
             {
                 return Color.Black;
             }
@@ -150,7 +159,7 @@ namespace Chess
 
         private Piece GetKing(Color color)
         {
-            foreach(Piece p in GetPiecesInGame(color))
+            foreach (Piece p in GetInGamePieces(color))
             {
                 if (p is King) return p;
             }
@@ -160,16 +169,42 @@ namespace Chess
         public bool IsKingInCheck(Color color)
         {
             Piece king = GetKing(color);
-            if(king == null)
+            if (king == null)
             {
                 throw new ChessBoardException($"There is no {color} king!");
             }
-            foreach(Piece p in GetPiecesInGame(Adversary(color)))
+            foreach (Piece p in GetInGamePieces(Adversary(color)))
             {
                 bool[,] mat = p.PossibleMoviments();
                 if (mat[king.Position.Line, king.Position.Column]) return true;
             }
             return false;
+        }
+
+        public bool IsCheckMate(Color color)
+        {
+            if (!IsKingInCheck(color)) return false;
+
+            foreach (Piece p in GetInGamePieces(color))
+            {
+                bool[,] mat = p.PossibleMoviments();
+                for (int i = 0; i < Board.Lines; i++)
+                {
+                    for (int j = 0; j < Board.Columns; j++)
+                    {
+                        if (mat[i, j])
+                        {
+                            Position origin = p.Position;
+                            Position destination = new Position(i, j);
+                            Piece captured = ExecuteMoviment(origin, destination);
+                            bool testCheck = IsKingInCheck(color);
+                            UndoMove(origin, destination, captured);
+                            if (!testCheck) return false;
+                        }
+                    }
+                }
+            }
+            return true;
         }
 
         public void InsertNewPiece(char column, int line, Piece piece)

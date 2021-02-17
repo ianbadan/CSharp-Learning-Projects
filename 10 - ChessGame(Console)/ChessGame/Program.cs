@@ -12,13 +12,13 @@ namespace ChessGame
             {
                 ChessMatch match = new ChessMatch();
 
-                while (!match.IsEnded)
+                while (true)
                 {
                     try
                     {
-
                         Console.Clear();
                         Screen.PrintMatch(match);
+                        if (match.IsMatchEnded) break;
 
                         Console.Write("\nOrigin: ");
                         Position origin = Screen.ReadChessPosition().ToPosition();
@@ -41,7 +41,7 @@ namespace ChessGame
                         Console.WriteLine(e.Message + " Press anything to continue!");
                         Console.ReadLine();
                     }
-                    catch(IndexOutOfRangeException)
+                    catch (IndexOutOfRangeException)
                     {
                         Console.WriteLine("Position out of bounds!");
                         Console.ReadLine();
@@ -52,7 +52,7 @@ namespace ChessGame
                         Console.ReadLine();
                     }
 
-                }
+                } 
 
             }
             catch (ChessBoardException e)
