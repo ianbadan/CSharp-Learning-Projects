@@ -2,21 +2,27 @@
 
 namespace Chess
 {
-    class Tower : Piece
+    class Rook : Piece
     {
-        public Tower(Board board, Color color) : base(board, color)
+        public Rook(Board board, Color color) : base(board, color)
         {
 
+        }
+
+
+        public override string ToString()
+        {
+            return "R";
         }
 
         public override bool[,] PossibleMoviments()
         {
             bool[,] mat = new bool[Board.Lines, Board.Columns];
             //UP
-            Position pos = new Position(0,0);
+            Position pos = new Position(0, 0);
 
             pos.SetValue(Position.Line - 1, Position.Column);
-            while( Board.IsPositionValid(pos) && IsAbleToMove(pos))
+            while (Board.IsPositionValid(pos) && IsAbleToMove(pos))
             {
                 mat[pos.Line, pos.Column] = true;
                 if (Board.GetPiece(pos) != null && Board.GetPiece(pos).Color != Color) break;
@@ -27,7 +33,7 @@ namespace Chess
             //DOWN
             pos.SetValue(Position.Line + 1, Position.Column);
             while (Board.IsPositionValid(pos) && IsAbleToMove(pos))
-            { 
+            {
                 mat[pos.Line, pos.Column] = true;
                 if (Board.GetPiece(pos) != null && Board.GetPiece(pos).Color != Color) break;
                 pos.Line++;
@@ -53,11 +59,6 @@ namespace Chess
             }
 
             return mat;
-        }
-
-        public override string ToString()
-        {
-            return "T";
         }
     }
 }
