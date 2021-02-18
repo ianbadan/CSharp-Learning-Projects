@@ -51,6 +51,11 @@ namespace ChessGame
                         Console.WriteLine("Invalid input format!");
                         Console.ReadLine();
                     }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("Unexpected error!");
+                        Console.ReadLine();
+                    }
 
                 } 
 

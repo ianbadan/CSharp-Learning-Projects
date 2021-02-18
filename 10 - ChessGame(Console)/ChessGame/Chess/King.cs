@@ -42,10 +42,10 @@ namespace Chess
                 }
             }
 
-            // Special Move Castling
+            // #SpecialMove Castling
             if(MovimentsQuantity == 0 && !_match.InCheck)
             {
-                // #Castling Short
+                // #Special Move Castling Short
                 Position posShortRook = new Position(Position.Line, Position.Column + 3);
                 if (VerifyRookToCastling(posShortRook))
                 {
@@ -57,7 +57,7 @@ namespace Chess
                     }
                 }
 
-                //#Castling Long
+                //#SpecialMove Castling Long
                 Position posLongRook = new Position(Position.Line, Position.Column - 4);
                 if (VerifyRookToCastling(posLongRook))
                 {
