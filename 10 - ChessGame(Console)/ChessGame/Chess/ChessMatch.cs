@@ -141,6 +141,46 @@ namespace Chess
                 throw new ChessBoardException("You can't put yourself in check!");
             }
 
+            Piece piece = Board.GetPiece(destination);
+
+            // #SpecialMove Pawn Promotion
+            if(piece is Pawn)
+            {
+                if ((piece.Color == Color.White && destination.Line == 0) || (piece.Color == Color.Black && destination.Line == 7))
+                {
+                    piece = Board.RemovePiece(destination);
+                    _pieces.Remove(piece);
+                    Console.WriteLine("\nPawn Promotion!");
+                    Console.WriteLine("Queen(Q), Rook(R), Bishop(B),Horse (H)");
+                    Console.Write("Choose a new piece (Q/R/B/H): ");
+                    char pieceType = char.Parse(Console.ReadLine());
+                    Piece newPiece;
+                    if (pieceType == 'Q' || pieceType == 'q')
+                    {
+                        newPiece = new Queen(Board, piece.Color);
+                    }
+                    else if(pieceType == 'R' || pieceType == 'r')
+                    {
+                        newPiece = new Rook(Board, piece.Color);
+                    }
+                    else if(pieceType == 'B' || pieceType == 'b')
+                    {
+                        newPiece = new Bishop(Board, piece.Color);
+                    } 
+                    else if(pieceType == 'H' || pieceType == 'h')
+                    {
+                        newPiece = new Horse(Board, piece.Color);
+                    }
+                    else
+                    {
+                        newPiece = new Queen(Board, piece.Color);
+                    }
+                    
+                    Board.InsertPiece(newPiece, destination);
+                    _pieces.Add(newPiece);
+                }
+            }
+
             if (IsKingInCheck(Adversary(CurrentPlayer)))
             {
                 InCheck = true;
@@ -158,7 +198,7 @@ namespace Chess
             Turn++;
             ChangeCurrentPlayer();
 
-            Piece piece = Board.GetPiece(destination);
+            piece = Board.GetPiece(destination);
 
             // #Special Move En Passant
             if (piece is Pawn && (destination.Line == origin.Line - 2 || destination.Line == origin.Line + 2) && piece.MovimentsQuantity == 1)
@@ -305,6 +345,7 @@ namespace Chess
         public void InitiateBoard()
         {
             //Inserting Black Pieces
+            
             InsertNewPiece('a', 8, new Rook(Board, Color.Black));
             InsertNewPiece('b', 8, new Horse(Board, Color.Black));
             InsertNewPiece('c', 8, new Bishop(Board, Color.Black));
@@ -313,7 +354,7 @@ namespace Chess
             InsertNewPiece('f', 8, new Bishop(Board, Color.Black));
             InsertNewPiece('g', 8, new Horse(Board, Color.Black));
             InsertNewPiece('h', 8, new Rook(Board, Color.Black));
-
+            
             InsertNewPiece('a', 7, new Pawn(Board, Color.Black, this));
             InsertNewPiece('b', 7, new Pawn(Board, Color.Black, this));
             InsertNewPiece('c', 7, new Pawn(Board, Color.Black, this));
@@ -322,8 +363,9 @@ namespace Chess
             InsertNewPiece('f', 7, new Pawn(Board, Color.Black, this));
             InsertNewPiece('g', 7, new Pawn(Board, Color.Black, this));
             InsertNewPiece('h', 7, new Pawn(Board, Color.Black, this));
-
+            
             //Inserting White Pieces
+
             InsertNewPiece('a', 1, new Rook(Board, Color.White));
             InsertNewPiece('b', 1, new Horse(Board, Color.White));
             InsertNewPiece('c', 1, new Bishop(Board, Color.White));
