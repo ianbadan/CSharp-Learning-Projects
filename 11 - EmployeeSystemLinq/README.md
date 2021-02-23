@@ -11,13 +11,9 @@ Mostrar também a soma dos salários dos funcionários cujonome começa com a le
 ## Exemplo de arquivo 
 
 Maria,maria@gmail.com,3200.00
-
 Alex,alex@gmail.com,1900.00
-
 Marco,marco@gmail.com,1700.00
-
 Bob,bob@gmail.com,3500.00
-
 Anna,anna@gmail.com,2800.00
 
 
